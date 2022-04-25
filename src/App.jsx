@@ -1,0 +1,26 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/header/Navbar";
+
+import CriptoScreen from "./pages/CriptoScreen";
+import ErrorScreen from "./pages/ErrorScreen";
+import HomeScreen from "./pages/HomeScreen";
+import NewsScreen from "./pages/NewsScreen";
+import NFTScreen from "./pages/NFTScreen";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/nft" element={<NFTScreen />} />
+        <Route path="/criptomonedas" element={<CriptoScreen />} />
+        <Route path="/noticiasCripto" element={<NewsScreen />} />
+        <Route path="*" element={<ErrorScreen />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;

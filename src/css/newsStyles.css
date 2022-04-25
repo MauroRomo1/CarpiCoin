@@ -1,0 +1,10 @@
+.titulo {
+  font-family: "Press Start 2P", cursive;
+}
+
+/* ==== BreakPoints ==== */
+@media screen and (max-width: 426px) {
+  .titulo {
+    font-size: 1rem;
+  }
+}

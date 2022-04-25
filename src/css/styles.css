@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ==== Estilos del Navbar ==== */
+.title {
+  font-family: "Press Start 2P", cursive;
+}
+
+.navbar {
+  background: rgb(255, 208, 80);
+  background: radial-gradient(
+    circle,
+    rgba(255, 208, 80, 1) 60%,
+    rgba(239, 239, 239, 1) 100%
+  );
+}
+/* ===================================== */
+
+/* ==== Estilos del Carousel ==== */
+.overlay:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.467);
+}
+
+.btn-carousel {
+  font-size: 0.8rem;
+}
+/* ===================================== */
+
+/* ==== BreakPoints ==== */
+@media screen and (max-width: 321px) {
+  .title {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbarLink {
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* ==================== */
