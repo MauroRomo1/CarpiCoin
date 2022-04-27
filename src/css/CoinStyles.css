@@ -1,0 +1,28 @@
+.logo-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-icon img {
+  width: 150px;
+  height: 150px;
+}
+
+.img_avatar {
+  width: 40px;
+  border-radius: 100%;
+}
+
+/* ==== BreakPoints ==== */
+
+@media screen and (max-width: 321px) {
+  .porcentajes {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .porcentajes {
+    font-size: 1rem;
+  }
+}

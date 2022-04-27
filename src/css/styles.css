@@ -36,6 +36,13 @@
 }
 /* ===================================== */
 
+/* ==== Estilos de la tabla de criptos ==== */
+.img-icon {
+  width: 30px;
+}
+
+/* ===================================== */
+
 /* ==== BreakPoints ==== */
 @media screen and (max-width: 321px) {
   .title {
