@@ -16,7 +16,12 @@ const CardsNews = ({ nota }) => {
               <p className="card-text">{nota.description}</p>
             </div>
             <div className="mb-3 text-center">
-              <a href={nota.url} className="btn btn-warning" target="_blank">
+              <a
+                href={nota.url}
+                className="btn btn-warning"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Ver la noticia completa
               </a>
             </div>
