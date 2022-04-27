@@ -11,8 +11,8 @@ const CardsNote = () => {
         <div className="card h-100 shadow border border-2 border-dark mb-5 bg-body rounded">
           <img src={portadaNFT} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Busca los mejores NFTs</h5>
-            <p className="card-text">Revisa los NFTs de cualquier billetera.</p>
+            <h5 className="card-title">Mira los ultimo NFTs del mercado</h5>
+            <p className="card-text">Revisa los NFTs del mercado.</p>
           </div>
         </div>
       </div>
