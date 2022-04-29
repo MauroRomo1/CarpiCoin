@@ -40,7 +40,11 @@ const NewsScreen = () => {
             <Loader />
           </>
         ) : (
-          <CardsNews nota={news} />
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
+            {news.datos.map((nota, indice) => (
+              <CardsNews nota={nota} key={indice} />
+            ))}
+          </div>
         )}
       </div>
     </main>
