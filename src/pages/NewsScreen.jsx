@@ -14,7 +14,6 @@ const NewsScreen = () => {
 
   useEffect(() => {
     getNews().then((repuesta) => {
-      console.log(repuesta);
       setNews({
         loading: false,
         datos: repuesta,

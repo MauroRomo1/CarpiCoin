@@ -3,8 +3,8 @@ import React from "react";
 const CardsNews = ({ nota }) => {
   return (
     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
-      {nota.datos.map((nota) => (
-        <div className="col">
+      {nota.datos.map((nota, indice) => (
+        <div key={indice} className="col">
           <div className="card h-100 shadow border border-2 border-dark mb-5 bg-body rounded text-center">
             <img
               src={nota.urlToImage}
