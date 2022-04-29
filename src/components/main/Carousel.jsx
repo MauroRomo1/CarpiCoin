@@ -37,7 +37,7 @@ const Carousel = () => {
 
             <NavLink
               className="btn btn-carousel title bg-warning bg-gradient"
-              to="/nft"
+              to="/criptomonedas"
             >
               Revisar
             </NavLink>
