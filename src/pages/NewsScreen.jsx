@@ -5,6 +5,7 @@ import "../css/newsStyles.css";
 import CardsNews from "../components/main/CardsNews";
 
 import { getNews } from "../helpers/newFetch";
+import Loader from "../components/loader/Loader";
 
 const NewsScreen = () => {
   const [news, setNews] = useState({
@@ -33,7 +34,14 @@ const NewsScreen = () => {
           </div>
         </div>
         {/* ==== Cards de noticias ==== */}
-        <CardsNews nota={news} />
+        {news.loading ? (
+          <>
+            <h4 className="text-center title my-4">Cargando informacion...</h4>
+            <Loader />
+          </>
+        ) : (
+          <CardsNews nota={news} />
+        )}
       </div>
     </main>
   );
